@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vim Cheat Sheet</title>
+  <link href="assets/style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!--[if lt IE 9]>
+  <script type="text/javascript"
+  src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+
+<body>
+
+<div class="container-fluid red" name="Top">
+  <div class="container">
+    <h1 class="header">Blogger Cheat Sheet <small>Indonesia</small></h1>
+  </div>
+</div>
+
+
+<div class="container bottom-30">
+  <ul class="head-content">
+    <li><a class="button" href="#layout">#Layout</a></li>
+    <li><a class="button" href="#comment">#Comment</a></li>
+    <li><a class="button" href="#header">#Header</a></li>
+    <li><a class="button" href="#post">#Posts (Loop)</a></li>
+    <li><a class="button" href="#status-bar">#Status Bar</a></li>
+    <li><a class="button" href="#gadget-widget">#Gadget/Widget</a></li>
+    <li><a class="button" href="#gadget">#Gadget</a></li>
+  </ul>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h3 id="layout">Layout</h3>
+      <ul class="list-unstyled">
+        <li class="content"><kbd>#navbar-iframe</kbd> - area NavBar Blogger</li>
+        <li class="content"><kbd>#outer-wrapper</kbd> - Bungkus luar untuk membungkus keseluruhan halaman</li>
+        <li class="content"><kbd>#header-wrapper</kbd> - Membungkus bagian header, title, dan description</li>
+        <li class="content"><kbd>#content-wrapper</kbd> - Membungkus bagian main dan sidebar</li>
+        <li class="content"><kbd>#main-wrapper</kbd> - Membungkus bagian blog post</li>
+        <li class="content"><kbd>#sidebar-wrapper</kbd> - Membungkus bagian sidebar</li>
+        <li class="content"><kbd>#footer-wrapper</kbd> - Membungkus bagian footer</li>
+      </ul>
+      <div class="well">
+        Ini adalah pembungkus yang lebih besar, di dalamnya kita bisa menemukan satu atau lebih area gadget
+      </div>
+
+      <h3 id="post">Posts (Loop)</h3>
+      <ul class="list-unstyled">
+        <li class="content"><kbd>.post</kbd> - Pembungkus area Post</li>
+        <li class="content"><kbd>.post-title</kbd> - Judul Post</li>
+        <li class="content"><kbd>.post-header-line-1</kbd> - informasi di bawah judul post seperti tanggal, jam, nama penulis, dan lain-lain</li>
+        <li class="content"><kbd>.date-header</kbd> - tanggal dimana Post dipublish</li>
+        <li class="content"><kbd>.post-author</kbd> - menampilkan post penulis</li>
+        <li class="content"><kbd>.post-timestamp</kbd> - waktu dimana Post dipublish </li>
+        <li class="content"><kbd>.post-label</kbd> - daftar label Post</li>
+        <li class="content"><kbd>.comment-link</kbd> - link ke Post Komentar</li>
+        <li class="content"><kbd>.post-backlinks</kbd> - Trackbascks Post</li>
+        <li class="content"><kbd>.star-ratings</kbd> - System rangking Star-ratins</li>
+        <li class="content"><kbd>.reaction-buttons</kbd> - Evaluasi oleh reaction system</li>
+        <li class="content"><kbd>.post-location</kbd> - Post Geolocation</li>
+        <li class="content"><kbd>.post-body</kbd> - Post Body, Artikel</li>
+        <li class="content"><kbd>.post-footer</kbd> - Informasi footer seperti tags, author, dan lain-lain</li>
+        <li class="content"><kbd>#blog-pager</kbd> - mengandung link navigasi (post lama / older entries dan post terbaru / newer entries)</li>
+        <li class="content"><kbd>.blog-page-older-link</kbd> - link navigasi older entries</li>
+        <li class="content"><kbd>.blog-page-newer-link</kbd> - link navigasi newer entries</li>
+        <li class="content"><kbd>.home-link</kbd> - Link navigasi Home</li>
+        <li class="content"><kbd>.feed-links</kbd> - link subscription ke "Post's (Atom)</li>
+      </ul>
+      <div class="well">
+        Gaya utama yang harus dipertimbangkan di setiap posting, sebagian besar tanggal tidak ditampilkan sampai pengguna memasukkannya dari panel
+      </div>
+
+      
+    </div>
+
+    <div class="col-md-4">
+      <h3 id="comment">Comment</h3>
+      <ul class="list-unstyled">
+        <li class="content"><kbd>#comments</kbd> - Pembungkus Comment dan comment-form</li>
+        <li class="content"><kbd>#comments h4</kbd> - judul komentar</li>
+        <li class="content"><kbd>dl.comments-block</kbd> - pembungkus Comment block</li>
+        <li class="content"><kbd>.comment-author</kbd> - link Comment's author dan icon</li>
+        <li class="content"><kbd>.comment-body</kbd> - Comment's body</li>
+        <li class="content"><kbd>.comment-footer</kbd> - Comment's footer</li>
+        <li class="content"><kbd>.comment-timestamps</kbd> - Comment's timestamp (waktu publish komentar)</li>
+        <li class="content"><kbd>.comment-form</kbd> - pembungkus Comment-form</li>
+        <li class="content"><kbd>h4.comment-post-message</kbd> - judul Comment-form</li>
+      </ul>
+      <div class="well">
+      Gaya untuk daftar dan bentuk komentar
+      </div>
+
+      <h3 id="status-bar">Status Bar</h3>
+      <ul class="list-unstyled">
+        <li class="content"><kbd>.busc.status-msg-wrap</kbd> - Status Bar</li>
+        <li class="content"><kbd>.status-msg-body</kbd> - pesan status bar</li>
+        <li class="content"><kbd>.status-msg-border</kbd> - border status bar</li>
+      </ul>
+      <div class="well">
+      Status bar, ditunjukkan dengan seraching atau memasukkan tag
+      </div>
+
+      <h3 id="gadget">Gadget</h3>
+      <ul class="list-unstyled">
+        <li class="content"><kbd>.header</kbd> - area block yang hanya memiliki satu widget: header (title dan description)</li>
+        <li class="content"><kbd>.main</kbd> - area block yang hanya memiliki satu widget: the entries</li>
+        <li class="content"><kbd>.sidebar</kbd> - </li>Zone edible pada sidebar untuk menambahkan / menghapus widget
+        <li class="content"><kbd>.footer</kbd> -</li>Zone edible di foot halaman untuk menambahkan/ menghapus widget
+      </ul>
+      <div class="well">
+      Area ini mungkin berisi gadget, "main" dan "header" hanya memiliki satu gadget dan terkunci secara default
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <h3 id="header">Header</h3>
+      <ul class="list-unstyled">
+        <li class="content"><kbd>#header-inner</kbd> - bungkus lapisan dalam untuk Header, title, dan description</li>
+        <li class="content"><kbd>h1.title</kbd> - Judul Blog</li>
+        <li class="content"><kbd>p.description</kbd> - deskripsi Blog</li>
+      </ul>
+      <div class="well">
+      Gaya utama di dalam header
+      </div>
+
+      <h3 id="gadget-widget">Gadget/Widgets</h3>
+      <ul class="list-unstyled">
+        <li class="content"><kbd>.widget</kbd> - Mengandung beberapa widget (sidebar, footer, atau main)</li>
+        <li class="content"><kbd>.widget-content</kbd> - content widget</li>
+        <li class="content"><kbd>.widget h2</kbd> - judul widget</li>
+        <li class="content"><kbd>.Label</kbd> - daftar tag pada widget</li>
+        <li class="content"><kbd>.BlogArchive</kbd> - widget mengandung arsip blog</li>
+        <li class="content"><kbd>.Poll</kbd> - widget Polling</li>
+        <li class="content"><kbd>.VideoBar</kbd> - widget Videobar</li>
+        <li class="content"><kbd>.SlideShow</kbd> - widget Slideshow</li>
+        <li class="content"><kbd>.Image</kbd> - widget Image</li>
+        <li class="content"><kbd>.AdSense</kbd> - widget AdSense</li>
+        <li class="content"><kbd>.Text</kbd> - widget Text</li>
+        <li class="content"><kbd>.HTML</kbd> - widget HTML code</li>
+        <li class="content"><kbd>.CustomSearch</kbd> -widget Custom search</li>
+        <li class="content"><kbd>.Followers</kbd> - widget Follower (via Google Friend Connect)</li>
+        <li class="content"><kbd>.Profile</kbd> - widget profile Author</li>
+        <li class="content"><kbd>.BloggerButton</kbd> - tombol "Powered by Blogger"</li>
+        <li class="content"><kbd>.Subscribe</kbd> - widget link Subscription-lis</li>
+        <li class="content"><kbd>.NewsBar</kbd> - widget bar Google News</li>
+        <li class="content"><kbd>.Feed</kbd> - daftar link RSS URL</li>
+        <li class="content"><kbd>.LinkList</kbd> - widget LinkList</li>
+        <li class="content"><kbd>.BlogList</kbd> - widget BlogRoll (daftar blog)</li>
+      </ul>
+      <div class="well">
+      Semua widget memiliki skema serupa, tapi mereka memiliki satu kelas lagi bergantung pada jenisnya
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container-fluid">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">&copy; 2017 under the terms of the MIT License | Inspired by <a href="https://vim.rtorr.com/lang/id/" class="inspired">vim.rtorr.com</a></div>
+          <div class="col-md-6"><span class="pull-right">Proudly hosted by <i class="fa fa-github-alt"></i> GitHub | <a href="#Top" class="Top">BackToTop</a></span> </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+</body>
+</html>
