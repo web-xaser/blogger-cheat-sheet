@@ -1,1 +1,3 @@
-# Blogger Cheat Sheet ID
+# Blogger Cheat Sheet 
+
+Список id и классов, используемых в стандартных и кастомных шаблонах Blogger.

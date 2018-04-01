@@ -78,11 +78,6 @@ h3 {
     width: 750px;
   }
 }
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
@@ -178,6 +173,9 @@ ul.head-content {
   margin: 20px 0 0;
   margin-left: 0;
   text-align: center;
+}
+ul.head-content li {
+  margin: 5px;
 }
 ul ul {
   margin-bottom: 0;
