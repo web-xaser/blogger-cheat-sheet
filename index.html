@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -8,175 +8,135 @@
   <title>Blogger Cheat Sheet</title>
   <link href="assets/style.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
   <!--[if lt IE 9]>
-  <script type="text/javascript"
-  src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
-</script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+  <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
-
 
 <body>
 
-<div class="container-fluid red" name="Top">
+<div class="container-fluid orange" name="Top">
   <div class="container">
-    <h1 class="header">Blogger Cheat Sheet <small>Indonesia</small></h1>
+    <h1 class="header">Blogger Cheat Sheet <small>Russia</small></h1>
   </div>
 </div>
 
 <div class="container bottom-30">
-<div class="well">Cheat Sheet ini bersumber dari <a href="https://btemplates.com/blog/bloggers-cheat-sheet/">btemplates.com</a></div>
+  <div class="well">Список id и классов, используемых в стандартных и кастомных шаблонах <a href="https://www.blogger.com/about" class="black" target="_blank" rel="noopener">Blogger</a>.</div>
+
   <ul class="head-content">
-    <li><a class="button" href="#layout">#Layout</a></li>
-    <li><a class="button" href="#comment">#Comment</a></li>
-    <li><a class="button" href="#header">#Header</a></li>
-    <li><a class="button" href="#post">#Posts (Loop)</a></li>
-    <li><a class="button" href="#status-bar">#Status Bar</a></li>
-    <li><a class="button" href="#gadget-widget">#Gadget/Widget</a></li>
-    <li><a class="button" href="#gadget">#Gadget</a></li>
+    <li><a class="button" href="#layout">Общие блоки</a></li>
+    <li><a class="button" href="#comment">Комментарии</a></li>
+    <li><a class="button" href="#header">Заголовок</a></li>
+    <li><a class="button" href="#post">Записи</a></li>
+    <li><a class="button" href="#status-bar">Инфопанель</a></li>
+    <li><a class="button" href="#gadget-widget">Гаджеты/виджеты</a></li>
   </ul>
 
   <div class="row">
     <div class="col-md-4">
-      <h3 id="layout">Layout</h3>
+      <h3 id="layout">Общие блоки</h3>
       <ul class="list-unstyled">
-        <li class="content"><kbd>#navbar-iframe</kbd> - area NavBar Blogger</li>
-        <li class="content"><kbd>#outer-wrapper</kbd> - Bungkus luar untuk membungkus keseluruhan halaman</li>
-        <li class="content"><kbd>#header-wrapper</kbd> - Membungkus bagian header, title, dan description</li>
-        <li class="content"><kbd>#content-wrapper</kbd> - Membungkus bagian main dan sidebar</li>
-        <li class="content"><kbd>#main-wrapper</kbd> - Membungkus bagian blog post</li>
-        <li class="content"><kbd>#sidebar-wrapper</kbd> - Membungkus bagian sidebar</li>
-        <li class="content"><kbd>#footer-wrapper</kbd> - Membungkus bagian footer</li>
+        <li class="content"><kbd>#navbar-iframe</kbd> - панель навигации Blogger</li>
+        <li class="content"><kbd>#outer-wrapper</kbd> - блок для всего блога</li>
+        <li class="content"><kbd>#header-wrapper</kbd> - блок для верхней части блога</li>
+        <li class="content"><kbd>#content-wrapper</kbd> - блок для записей и боковой колонки</li>
+        <li class="content"><kbd>#main-wrapper</kbd> - блок для записей</li>
+        <li class="content"><kbd>#sidebar-wrapper</kbd> - блок для боковой колонки</li>
+        <li class="content"><kbd>#footer-wrapper</kbd> - блок для нижней части блога</li>
+        <li class="content"><kbd>.header</kbd> - область для гаджетов в верхней части блога</li>
+        <li class="content"><kbd>.main</kbd> - область гаджета записей блога</li>
+        <li class="content"><kbd>.sidebar</kbd> - область для гаджетов в боковой колонке</li>
+        <li class="content"><kbd>.footer</kbd> - область для гаджетов в нижней части блога</li>
       </ul>
-      <div class="well">
-        Ini adalah pembungkus yang lebih besar, di dalamnya kita bisa menemukan satu atau lebih area gadget
-      </div>
-
-      <h3 id="post">Posts (Loop)</h3>
+      <h3 id="comment">Комментарии</h3>
       <ul class="list-unstyled">
-        <li class="content"><kbd>.post</kbd> - Pembungkus area Post</li>
-        <li class="content"><kbd>.post-title</kbd> - Judul Post</li>
-        <li class="content"><kbd>.post-header-line-1</kbd> - informasi di bawah judul post seperti tanggal, jam, nama penulis, dan lain-lain</li>
-        <li class="content"><kbd>.date-header</kbd> - tanggal dimana Post dipublish</li>
-        <li class="content"><kbd>.post-author</kbd> - menampilkan post penulis</li>
-        <li class="content"><kbd>.post-timestamp</kbd> - waktu dimana Post dipublish </li>
-        <li class="content"><kbd>.post-label</kbd> - daftar label Post</li>
-        <li class="content"><kbd>.comment-link</kbd> - link ke Post Komentar</li>
-        <li class="content"><kbd>.post-backlinks</kbd> - Trackbascks Post</li>
-        <li class="content"><kbd>.star-ratings</kbd> - System rangking Star-ratins</li>
-        <li class="content"><kbd>.reaction-buttons</kbd> - Evaluasi oleh reaction system</li>
-        <li class="content"><kbd>.post-location</kbd> - Post Geolocation</li>
-        <li class="content"><kbd>.post-body</kbd> - Post Body, Artikel</li>
-        <li class="content"><kbd>.post-footer</kbd> - Informasi footer seperti tags, author, dan lain-lain</li>
-        <li class="content"><kbd>#blog-pager</kbd> - mengandung link navigasi (post lama / older entries dan post terbaru / newer entries)</li>
-        <li class="content"><kbd>.blog-page-older-link</kbd> - link navigasi older entries</li>
-        <li class="content"><kbd>.blog-page-newer-link</kbd> - link navigasi newer entries</li>
-        <li class="content"><kbd>.home-link</kbd> - Link navigasi Home</li>
-        <li class="content"><kbd>.feed-links</kbd> - link subscription ke "Post's (Atom)</li>
+        <li class="content"><kbd>#comments</kbd> - блок для комментариев и формы для их добавления</li>
+        <li class="content"><kbd>#comments h4</kbd> - заголовок со количеством комментариев</li>
+        <li class="content"><kbd>dl.comments-block</kbd> - блок для одного комментария</li>
+        <li class="content"><kbd>.comment-author</kbd> - автор комментария</li>
+        <li class="content"><kbd>.comment-body</kbd> - текст комментария</li>
+        <li class="content"><kbd>.comment-footer</kbd> - нижняя часть комментария с дополнительной информацией</li>
+        <li class="content"><kbd>.comment-timestamps</kbd> - дата и время публикации комментария</li>
+        <li class="content"><kbd>.comment-form</kbd> - блок для формы добавления комментариев</li>
+        <li class="content"><kbd>h4.comment-post-message</kbd> - заголовок перед формой добавления</li>
       </ul>
-      <div class="well">
-        Gaya utama yang harus dipertimbangkan di setiap posting, sebagian besar tanggal tidak ditampilkan sampai pengguna memasukkannya dari panel
-      </div>
-
-      
     </div>
-
     <div class="col-md-4">
-      <h3 id="comment">Comment</h3>
+      <h3 id="post">Записи</h3>
       <ul class="list-unstyled">
-        <li class="content"><kbd>#comments</kbd> - Pembungkus Comment dan comment-form</li>
-        <li class="content"><kbd>#comments h4</kbd> - judul komentar</li>
-        <li class="content"><kbd>dl.comments-block</kbd> - pembungkus Comment block</li>
-        <li class="content"><kbd>.comment-author</kbd> - link Comment's author dan icon</li>
-        <li class="content"><kbd>.comment-body</kbd> - Comment's body</li>
-        <li class="content"><kbd>.comment-footer</kbd> - Comment's footer</li>
-        <li class="content"><kbd>.comment-timestamps</kbd> - Comment's timestamp (waktu publish komentar)</li>
-        <li class="content"><kbd>.comment-form</kbd> - pembungkus Comment-form</li>
-        <li class="content"><kbd>h4.comment-post-message</kbd> - judul Comment-form</li>
+        <li class="content"><kbd>.post</kbd> - блок для записи</li>
+        <li class="content"><kbd>.post-title</kbd> - заголовок записи</li>
+        <li class="content"><kbd>.post-header-line-1</kbd> - информация о записи под заголовком (дата и время публикации, автор, местоположение, прочее)</li>
+        <li class="content"><kbd>.date-header</kbd> - дата публикации</li>
+        <li class="content"><kbd>.post-author</kbd> - автор записи</li>
+        <li class="content"><kbd>.post-timestamp</kbd> - время публикации</li>
+        <li class="content"><kbd>.post-label</kbd> - ярлыки, указанные для записи</li>
+        <li class="content"><kbd>.comment-link</kbd> - ссылка на форму для добавления комментариев</li>
+        <li class="content"><kbd>.post-backlinks</kbd> - отслеживание записи</li>
+       <li class="content"><kbd>.star-ratings</kbd> - рейтинг записи</li>
+        <li class="content"><kbd>.reaction-buttons</kbd> - оценка зиписи</li>
+        <li class="content"><kbd>.post-location</kbd> - местоположение записи</li>
+        <li class="content"><kbd>.post-body</kbd> - текст записи</li>
+        <li class="content"><kbd>.post-footer</kbd> - информация о записи под контентом (ярлыки, автор, местоположение, прочее)</li>
+        <li class="content"><kbd>#blog-pager</kbd> - блок для ссылок навигации между записями</li>
+        <li class="content"><kbd>.blog-page-older-link</kbd> - ссылка на старые записи</li>
+        <li class="content"><kbd>.blog-page-newer-link</kbd> - ссылка на новые записи</li>
+        <li class="content"><kbd>.home-link</kbd> - ссылка на домашнюю страницу</li>
+        <li class="content"><kbd>.feed-links</kbd> - ссылки подписки на новые записи (Atom, RSS)</li>
       </ul>
-      <div class="well">
-      Gaya untuk daftar dan bentuk komentar
-      </div>
-
-      <h3 id="status-bar">Status Bar</h3>
+      <h3 id="status-bar">Инфопанель</h3>
       <ul class="list-unstyled">
-        <li class="content"><kbd>.busc.status-msg-wrap</kbd> - Status Bar</li>
-        <li class="content"><kbd>.status-msg-body</kbd> - pesan status bar</li>
-        <li class="content"><kbd>.status-msg-border</kbd> - border status bar</li>
+        <li class="content"><kbd>.status-msg-wrap</kbd> - блок для инфопанели</li>
+        <li class="content"><kbd>.status-msg-body</kbd> - текст инфопанели</li>
+        <li class="content"><kbd>.status-msg-border</kbd> - блок с границей инфопанели</li>
       </ul>
-      <div class="well">
-      Status bar, ditunjukkan dengan seraching atau memasukkan tag
-      </div>
-
-      <h3 id="gadget">Gadget</h3>
-      <ul class="list-unstyled">
-        <li class="content"><kbd>.header</kbd> - area block yang hanya memiliki satu widget: header (title dan description)</li>
-        <li class="content"><kbd>.main</kbd> - area block yang hanya memiliki satu widget: the entries</li>
-        <li class="content"><kbd>.sidebar</kbd> - </li>Zone edible pada sidebar untuk menambahkan / menghapus widget
-        <li class="content"><kbd>.footer</kbd> -</li>Zone edible di foot halaman untuk menambahkan/ menghapus widget
-      </ul>
-      <div class="well">
-      Area ini mungkin berisi gadget, "main" dan "header" hanya memiliki satu gadget dan terkunci secara default
-      </div>
     </div>
-
     <div class="col-md-4">
-      <h3 id="header">Header</h3>
+      <h3 id="header">Заголовок</h3>
       <ul class="list-unstyled">
-        <li class="content"><kbd>#header-inner</kbd> - bungkus lapisan dalam untuk Header, title, dan description</li>
-        <li class="content"><kbd>h1.title</kbd> - Judul Blog</li>
-        <li class="content"><kbd>p.description</kbd> - deskripsi Blog</li>
+        <li class="content"><kbd>#header-inner</kbd> - блок для виджета заголовка блога</li>
+        <li class="content"><kbd>h1.title</kbd> - заголовок блога</li>
+        <li class="content"><kbd>p.description</kbd> - описание блога</li>
       </ul>
-      <div class="well">
-      Gaya utama di dalam header
-      </div>
-
-      <h3 id="gadget-widget">Gadget/Widgets</h3>
+      <h3 id="gadget-widget">Гаджеты/виджеты</h3>
       <ul class="list-unstyled">
-        <li class="content"><kbd>.widget</kbd> - Mengandung beberapa widget (sidebar, footer, atau main)</li>
-        <li class="content"><kbd>.widget-content</kbd> - content widget</li>
-        <li class="content"><kbd>.widget h2</kbd> - judul widget</li>
-        <li class="content"><kbd>.Label</kbd> - daftar tag pada widget</li>
-        <li class="content"><kbd>.BlogArchive</kbd> - widget mengandung arsip blog</li>
-        <li class="content"><kbd>.Poll</kbd> - widget Polling</li>
-        <li class="content"><kbd>.VideoBar</kbd> - widget Videobar</li>
-        <li class="content"><kbd>.SlideShow</kbd> - widget Slideshow</li>
-        <li class="content"><kbd>.Image</kbd> - widget Image</li>
-        <li class="content"><kbd>.AdSense</kbd> - widget AdSense</li>
-        <li class="content"><kbd>.Text</kbd> - widget Text</li>
-        <li class="content"><kbd>.HTML</kbd> - widget HTML code</li>
-        <li class="content"><kbd>.CustomSearch</kbd> -widget Custom search</li>
-        <li class="content"><kbd>.Followers</kbd> - widget Follower (via Google Friend Connect)</li>
-        <li class="content"><kbd>.Profile</kbd> - widget profile Author</li>
-        <li class="content"><kbd>.BloggerButton</kbd> - tombol "Powered by Blogger"</li>
-        <li class="content"><kbd>.Subscribe</kbd> - widget link Subscription-lis</li>
-        <li class="content"><kbd>.NewsBar</kbd> - widget bar Google News</li>
-        <li class="content"><kbd>.Feed</kbd> - daftar link RSS URL</li>
-        <li class="content"><kbd>.LinkList</kbd> - widget LinkList</li>
-        <li class="content"><kbd>.BlogList</kbd> - widget BlogRoll (daftar blog)</li>
+        <li class="content"><kbd>.widget</kbd> - блок для всего виджета</li>
+        <li class="content"><kbd>.widget-content</kbd> - содержиоме виджета</li>
+        <li class="content"><kbd>.widget h2</kbd> - заголовок виджета</li>
+        <li class="content"><kbd>.Label</kbd> - виджет списка ярлыков</li>
+        <li class="content"><kbd>.BlogArchive</kbd> - виджет архива</li>
+        <li class="content"><kbd>.Poll</kbd> - виджет опроса</li>
+        <li class="content"><kbd>.VideoBar</kbd> - виджет видео</li>
+        <li class="content"><kbd>.SlideShow</kbd> - виджет слайдшоу</li>
+        <li class="content"><kbd>.Image</kbd> - виджет изображения</li>
+        <li class="content"><kbd>.AdSense</kbd> - виджет AdSense</li>
+        <li class="content"><kbd>.Text</kbd> - виджет текста</li>
+        <li class="content"><kbd>.HTML</kbd> - виджет HTML</li>
+        <li class="content"><kbd>.CustomSearch</kbd> - виджет поиска</li>
+        <li class="content"><kbd>.Followers</kbd> - виджет подписчиков (vGoogle Friend Connect)</li>
+        <li class="content"><kbd>.Profile</kbd> - виджет профиля автора</li>
+        <li class="content"><kbd>.BloggerButton</kbd> - виджет кнопки "Powered by Blogger"</li>
+        <li class="content"><kbd>.Subscribe</kbd> - виджет кнопок подписки на блог</li>
+        <li class="content"><kbd>.NewsBar</kbd> - виджет для "Google Новости"</li>
+        <li class="content"><kbd>.Feed</kbd> - виджет ссылки подписки на блог</li>
+        <li class="content"><kbd>.LinkList</kbd> - виджет списка ссылок</li>
+        <li class="content"><kbd>.BlogList</kbd> - виджет списка ссылок на блоги</li>
       </ul>
-      <div class="well">
-      Semua widget memiliki skema serupa, tapi mereka memiliki satu kelas lagi bergantung pada jenisnya
-      </div>
-
     </div>
-
   </div>
-
-
   <div class="container-fluid">
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">&copy; 2017 under the terms of the MIT License | Inspired by <a href="https://vim.rtorr.com/lang/id/" class="inspired">vim.rtorr.com</a></div>
-          <div class="col-md-6"><span class="pull-right">Proudly hosted by <i class="fa fa-github-alt"></i> GitHub | <a href="#Top" class="Top">BackToTop</a></span> </div>
+          <div class="col-md-6">&copy; 2018 | <a href="http://web-xaser.mit-license.org" class="inspired" target="_blank" rel="noopener">MIT License</a> | Вдохновлено <a href="https://github.com/fatonio/blogger-cheat-sheet-id" class="inspired" target="_blank" rel="noopener">fatonio</a></div>
+          <div class="col-md-6"><span class="pull-right">Размещено на GitHub | <a href="#Top" class="Top">Наверх</a></span> </div>
         </div>
       </div>
     </footer>
   </div>
 
-
 </body>
+
 </html>
